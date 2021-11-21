@@ -537,11 +537,24 @@ Step 7 - Fix them with sklean imputer""", language="markdown")
         X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 
+        from sklearn.linear_model import LogisticRegression
+        from sklearn.neighbors import KNeighborsRegressor
+        from sklearn.naive_bayes import GaussianNB
+        from sklearn.linear_model import ElasticNetCV
+        from sklearn.cluster import KMeans
+
         st.write("The models that we are going to use are: Sklearn's: LinearRegression, Random Forest, GradientBoostingRegressor")
         model_list = {
-                'LinearRegression':LinearRegression(),
+                #'LinearRegression':LinearRegression(),
+                #'DecisionTreeRegressor':DecisionTreeRegressor(),
+               # 'KNeighborsRegressor':KNeighborsRegressor(n_neighbors=2),
+                #'ElasticNet':ElasticNetCV(),
+                #'Kmeans':KMeans(n_clusters=5),
+
+
+
                # 'RandomForest':RandomForestRegressor(),
-                #'GradientBoostingRegressor':GradientBoostingRegressor()
+                'GradientBoostingRegressor':GradientBoostingRegressor()
                 }
 
         for  model_name,model in model_list.items():
