@@ -543,20 +543,15 @@ Step 7 - Fix them with sklean imputer""", language="markdown")
         from sklearn.linear_model import ElasticNetCV
         from sklearn.cluster import KMeans
         from sklearn.svm import LinearSVC
+        from sklearn import linear_model 
+
 
 
         st.write("The models that we are going to use are: Sklearn's: LinearRegression, Random Forest, GradientBoostingRegressor")
         model_list = {
-                #'LinearRegression':LinearRegression(),
-                #'DecisionTreeRegressor':DecisionTreeRegressor(),
-               # 'KNeighborsRegressor':KNeighborsRegressor(n_neighbors=2),
-                #'ElasticNet':ElasticNetCV(),
-                #'Kmeans':KMeans(n_clusters=5),
-                 'Linear SVC':LinearSVC(random_state=0, tol=1e-5)
-
-
-               # 'RandomForest':RandomForestRegressor(),
-                #'GradientBoostingRegressor':GradientBoostingRegressor()
+                'GradientBoostingRegressor':GradientBoostingRegressor(),
+                'DecisionTreeRegressor':DecisionTreeRegressor(),
+                'KNeighborsRegressor':KNeighborsRegressor(n_neighbors=5),
                 }
 
         for  model_name,model in model_list.items():
