@@ -543,7 +543,7 @@ Step 7 - Fix them with sklean imputer""", language="markdown")
         from sklearn.linear_model import ElasticNetCV
         from sklearn.cluster import KMeans
         from sklearn.svm import LinearSVC
-
+random_state=0, tol=1e-5
 
         st.write("The models that we are going to use are: Sklearn's: LinearRegression, Random Forest, GradientBoostingRegressor")
         model_list = {
@@ -552,7 +552,7 @@ Step 7 - Fix them with sklean imputer""", language="markdown")
                # 'KNeighborsRegressor':KNeighborsRegressor(n_neighbors=2),
                 #'ElasticNet':ElasticNetCV(),
                 #'Kmeans':KMeans(n_clusters=5),
-                 'Linear SVC':LinearSVC()
+                 'Linear SVC':LinearSVC(random_state=0, tol=1e-5)
 
 
                # 'RandomForest':RandomForestRegressor(),
