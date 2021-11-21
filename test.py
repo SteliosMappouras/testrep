@@ -551,7 +551,7 @@ Step 7 - Fix them with sklean imputer""", language="markdown")
         model_list = {
                 'GradientBoostingRegressor':GradientBoostingRegressor(),
                 'DecisionTreeRegressor':DecisionTreeRegressor(),
-                'KNeighborsRegressor':KNeighborsRegressor(n_neighbors=5),
+                'LinearRegression':LinearRegression(),
                 }
 
         for  model_name,model in model_list.items():
