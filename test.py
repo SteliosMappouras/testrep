@@ -539,8 +539,8 @@ Step 7 - Fix them with sklean imputer""", language="markdown")
 
         st.write("The models that we are going to use are: Sklearn's: LinearRegression, Random Forest, GradientBoostingRegressor")
         model_list = {
-                'LinearRegression':LinearRegression(),
-               # 'RandomForest':RandomForestRegressor(),
+               # 'LinearRegression':LinearRegression(),
+                'RandomForest':RandomForestRegressor(),
                 #'GradientBoostingRegressor':GradientBoostingRegressor()
                 }
 
